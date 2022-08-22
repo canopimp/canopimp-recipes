@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jamf.MicrosoftOffice2019</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Applications</string>
+		<key>DOWNLOADURL</key>
+		<string>https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%</string>
+		<key>NAME</key>
+		<string>Microsoft_Office</string>
+		<key>PRODUCTID</key>
+		<string>525133</string>
+		<key>VENDOR</key>
+		<string>Microsoft</string>
+        <key>SOFTWARETITLE</key>
+        <string>Office</string>
+		<key>VERSIONTYPE</key>
+		<string>CFBundleVersion</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.novaksam.pkg.microsoftoffice2019suite</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.novaksam.download.microsoftoffice2019suite</key>
+			<dict>
+				<key>git_hash</key>
+				<string>662fe9afc731059c5e86423e202770b9a38afa26</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.novaksam-recipes/Recipes - Download/MicrosoftOffice2019Suite.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>d52ea5c85c6fc53339dcf3b1192f4fbfd35dfbfe47d219317c1754d705018c82</string>
+			</dict>
+			<key>com.github.novaksam.pkg.microsoftoffice2019suite</key>
+			<dict>
+				<key>git_hash</key>
+				<string>662fe9afc731059c5e86423e202770b9a38afa26</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.novaksam-recipes/Recipes - pkg/MicrosoftOffice2019Suite.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>9a7321a43bf516fcef95b6714492952c442c1e8b976ea42716c75c7ddabcee68</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category_name</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_category</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		</dict>
+	</array>
+</dict>
+</plist>
