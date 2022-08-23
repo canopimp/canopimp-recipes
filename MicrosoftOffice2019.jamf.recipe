@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>local.jamf.MicrosoftOffice2019</string>
+	<string>com.github.canopimp.jamf.MicrosoftOffice2019</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
