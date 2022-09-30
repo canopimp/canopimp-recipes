@@ -14,7 +14,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.novaksam.pkg.AppleXeroxPrinterDrivers</string>
+	<string>com.github.jazzace.pkg.AppleXeroxPrinterDrivers</string>
 	<key>Process</key>
 	<array>
 		<dict>
