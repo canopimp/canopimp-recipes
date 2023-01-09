@@ -94,7 +94,7 @@
 					<key>options</key>
 					<string>purge_ds_store</string>
 					<key>pkgname</key>
-					<string>%NAME%-%jamfversion%</string>
+					<string>%NAME%-%version%</string>
 					<key>version</key>
 					<string>%version%</string>
 				</dict>
