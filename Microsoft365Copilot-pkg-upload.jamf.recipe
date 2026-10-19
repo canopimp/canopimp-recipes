@@ -22,7 +22,7 @@
 		<string>CFBundleShortVersionString</string>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>com.github.rtrouton.pkg.microsoftcopilot</string>
+	<string>com.github.canopimp.pkg.microsoftcopilot</string>
 	<key>Process</key>
 	<array>
 		<dict>
